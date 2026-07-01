@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.next1{
+    float:left;
+    margin-top: 100px;
+    
+}
+.next2{
+    float:left;
+    margin-top: 100px;
+    padding:5px;
+}
+.next2 :nth-child(1){
+    font-weight: bold;
+}
+span{
+    border:1px solid black;
+    margin-left: 3px;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    text-align: center;
+}
+

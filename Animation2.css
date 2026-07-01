@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    background-color: rgb(35, 36, 47);
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+
+}
+.car{
+    width: 400px;
+    height: 280px;
+}
+.aero{
+    width: 350px;
+    height: 200px;
+}
+.moon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: bisque;
+    top: 100px;
+    left: 100px;
+    z-index: 0;
+    position: absolute;
+}
+.move2{
+     top: 500px;
+    position: absolute;
+    animation-name: bmw ;
+    animation: bmw 5s linear 0s infinite;
+}
+.move1{
+    left: 1500px;
+    top: 100px;
+    z-index: 1;
+    position: absolute;
+    animation-name: aeroplane;
+    animation: aeroplane 5s linear 0s infinite;
+}
+
+@keyframes bmw{
+    from{
+        left: -300px;
+    }
+    to{
+        left: 1500px;
+    }
+   
+}
+@keyframes aeroplane{
+    0%{
+        top: 100px;
+        left: 1500px;
+    }
+    50%{
+        top: 50px;
+        left: 750px;
+    }
+    100%{
+        top: -100px;
+        left: -200px;
+    }
+
+}

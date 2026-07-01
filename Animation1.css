@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.border{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    border: 3px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.b1{
+    width: 50px;
+    height: 50px;
+    background-color: chartreuse;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: ballone;
+    animation: ballone 3s linear 0s infinite;
+}
+.b2{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: balltwo;
+    animation: balltwo 3s linear 0s infinite;
+    left: 50px;
+
+}
+@keyframes ballone{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    30%{
+        top: 200px;
+        left: 350px;
+        background-color: yellow;
+    }
+    70%{
+        right: 200px;
+        top: 350px;
+        background-color: blue;
+    }
+    
+    100%{
+        top: 0px;
+        left:0px;
+        background-color: cornflowerblue;
+    }
+}
+@keyframes balltwo{
+    0%{
+        top: 0px;
+        left:50px;
+    }
+    25%{
+        top: 400px;
+        left: 200px;
+        background-color: yellow;
+    }
+    50%{
+        top: 0px;
+        left: 350px;
+        background-color: rgb(164, 37, 145);
+    }
+    75%{
+        top: 350px;
+        left: 150px;
+        background-color: hotpink;
+    }
+    100%{
+        top: 0px;
+        left:50px;
+        background-color: rgb(146, 89, 33);
+    }
+
+}
